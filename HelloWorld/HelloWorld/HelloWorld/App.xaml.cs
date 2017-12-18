@@ -22,7 +22,7 @@ namespace HelloWorld
 		protected override void OnStart ()
 		{
             // Handle when your app starts
-            AppCenter.Start("uwp=6adde237-562c-4834-b2eb-a59d3c4ede95;" +
+            AppCenter.Start("uwp=ba4e80a0-cf3c-4791-b16b-a6c23399f6c7;" +
                    "android=8b4a54ff-9951-4e97-99ed-3ab95b729c58" +
                    "ios=f86885a7-2e89-46cb-bc33-2c77f94c7ead",
                    typeof(Analytics), typeof(Crashes));

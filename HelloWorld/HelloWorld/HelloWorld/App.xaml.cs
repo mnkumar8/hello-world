@@ -6,6 +6,7 @@ using System.Text;
 using Xamarin.Forms;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace HelloWorld
 {
@@ -22,9 +23,9 @@ namespace HelloWorld
 		{
             // Handle when your app starts
             AppCenter.Start("uwp=6adde237-562c-4834-b2eb-a59d3c4ede95;" +
-                   "android={Your Android App secret here}" +
-                   "ios={Your iOS App secret here}",
-                   typeof(Analytics));
+                   "android=8b4a54ff-9951-4e97-99ed-3ab95b729c58" +
+                   "ios=f86885a7-2e89-46cb-bc33-2c77f94c7ead",
+                   typeof(Analytics), typeof(Crashes));
         }
 
 		protected override void OnSleep ()
